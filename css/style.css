@@ -35,3 +35,14 @@ li {
   margin-right: 62px;
   cursor: wait;
 }
+.header-prikol {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 277px;
+  margin-top: 195px;
+}
+.header-prikol__title {
+  color: white;
+  font-size: 120px;
+}

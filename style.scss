@@ -32,4 +32,15 @@ li{
         cursor: wait;
        }
     }
+    &-prikol{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 277px;
+        margin-top: 195px;
+        &__title{
+            color: white;
+            font-size: 120px;
+        }
+    }
 }
