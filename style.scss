@@ -7,6 +7,7 @@ li{
 }
 
 .header{
+
     background: url(/img/diego-gutierrez-NRn5rrBnH8w-unsplash\ 1.png) no-repeat center/cover;
     &-nav{
         display: flex;
@@ -41,6 +42,65 @@ li{
         &__title{
             color: white;
             font-size: 120px;
+        }
+        &__button{
+            padding: 26px 64px;
+            color: white;
+            background: #DD2242;
+            border-radius: 35px;
+            border: none;
+            font-size: 20px;
+        }
+    }
+    &-reklama{
+        background: rgba(0, 0, 0, 0.475);
+        display: flex;
+        justify-content: flex-end;
+        &-fragment{
+            height: 120px;
+            width: 170px;
+            &__num{
+                color: red;
+            }
+            &__title{
+                color: white;
+            }
+            &__text{
+                color: rgba(255, 255, 255, 0.571);
+            }
+        }
+    }
+}
+
+.main{
+    background: rgb(3, 3, 43);
+    &-top{
+        display: flex;
+        align-items: center;
+        &__photo{
+            width: 460px;
+            height: 300px;
+            padding-left: 340px;
+            padding-right: 130px;
+            margin-top: 207px;
+        }
+        &-block{
+            &__title{
+                color: white;
+                font-size: 38px;
+            }
+            &__text{
+                color: white;
+            }
+            &__button{
+                background: #DD2242;
+                border: none;
+                border-radius: 20px;
+                margin-top: 32px;
+                padding: 16px 41px;
+                color: white;
+            }
+
         }
     }
 }

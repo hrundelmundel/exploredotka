@@ -46,3 +46,59 @@ li {
   color: white;
   font-size: 120px;
 }
+.header-prikol__button {
+  padding: 26px 64px;
+  color: white;
+  background: #DD2242;
+  border-radius: 35px;
+  border: none;
+  font-size: 20px;
+}
+.header-reklama {
+  background: rgba(0, 0, 0, 0.475);
+  display: flex;
+  justify-content: flex-end;
+}
+.header-reklama-fragment {
+  height: 120px;
+  width: 170px;
+}
+.header-reklama-fragment__num {
+  color: red;
+}
+.header-reklama-fragment__title {
+  color: white;
+}
+.header-reklama-fragment__text {
+  color: rgba(255, 255, 255, 0.571);
+}
+
+.main {
+  background: rgb(3, 3, 43);
+}
+.main-top {
+  display: flex;
+  align-items: center;
+}
+.main-top__photo {
+  width: 460px;
+  height: 300px;
+  padding-left: 340px;
+  padding-right: 130px;
+  margin-top: 207px;
+}
+.main-top-block__title {
+  color: white;
+  font-size: 38px;
+}
+.main-top-block__text {
+  color: white;
+}
+.main-top-block__button {
+  background: #DD2242;
+  border: none;
+  border-radius: 20px;
+  margin-top: 32px;
+  padding: 16px 41px;
+  color: white;
+}
