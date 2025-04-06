@@ -104,3 +104,29 @@ li{
         }
     }
 }
+
+.explore{
+    background: url(/img/abstract-geometric-line-background_889452-56807.avif);
+    &-numbers{
+        color: white;
+        &-cards{
+        }
+    }
+}
+
+
+.reviews{
+    &-cards{
+        display: flex;
+        justify-content: center;
+        &-item{
+            width: 255px;
+            height: 292px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 49px 9px 29px 18px;
+            border-radius: 15px;
+        }
+    }
+}
