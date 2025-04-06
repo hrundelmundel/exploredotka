@@ -103,10 +103,44 @@ li{
 
         }
     }
+    &-bot{
+
+        display: flex;
+        justify-content: center;
+        &__photo{
+            padding-left: 124px;
+            padding-right: 130px;
+            margin-top: 207px;
+            width: 460px;
+            height: 300px;
+            margin-bottom: 200px;
+        }
+        &-block{
+            margin-top: 260px;
+            margin-left: 383px;
+            &__title{
+                color: white;
+                font-size: 38px;
+            }
+            &__text{
+                color: white;
+            }
+            &__button{
+                background: #DD2242;
+                border: none;
+                border-radius: 20px;
+                margin-top: 32px;
+                padding: 16px 41px;
+                color: white;
+            }
+
+        }
+        
+    }
 }
 
 .explore{
-    background: url(/img/abstract-geometric-line-background_889452-56807.avif);
+    background: url(/img/abstract-geometric-line-background_889452-56807.avif) no-repeat center/cover;
     &-numbers{
         color: white;
         &-cards{
@@ -116,6 +150,7 @@ li{
 
 
 .reviews{
+    background: url(/img/a06dd93a7b.webp) no-repeat center/cover;
     &-cards{
         display: flex;
         justify-content: center;
@@ -127,6 +162,9 @@ li{
             justify-content: space-between;
             padding: 49px 9px 29px 18px;
             border-radius: 15px;
+            &:nth-child(1){
+
+            }
         }
     }
 }

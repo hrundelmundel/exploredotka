@@ -102,12 +102,46 @@ li {
   padding: 16px 41px;
   color: white;
 }
+.main-bot {
+  display: flex;
+  justify-content: center;
+}
+.main-bot__photo {
+  padding-left: 124px;
+  padding-right: 130px;
+  margin-top: 207px;
+  width: 460px;
+  height: 300px;
+  margin-bottom: 200px;
+}
+.main-bot-block {
+  margin-top: 260px;
+  margin-left: 383px;
+}
+.main-bot-block__title {
+  color: white;
+  font-size: 38px;
+}
+.main-bot-block__text {
+  color: white;
+}
+.main-bot-block__button {
+  background: #DD2242;
+  border: none;
+  border-radius: 20px;
+  margin-top: 32px;
+  padding: 16px 41px;
+  color: white;
+}
 
 .explore {
-  background: url(/img/abstract-geometric-line-background_889452-56807.avif);
+  background: url(/img/abstract-geometric-line-background_889452-56807.avif) no-repeat center/cover;
 }
 .explore-numbers {
   color: white;
+}
+.reviews {
+  background: url(/img/a06dd93a7b.webp) no-repeat center/cover;
 }
 .reviews-cards {
   display: flex;
