@@ -141,8 +141,16 @@ li{
 
 .explore{
     background: url(/img/abstract-geometric-line-background_889452-56807.avif) no-repeat center/cover;
+    padding: 64px 32px;
+    text-align: center;
     &-numbers{
         color: white;
+        &-start{
+            display: flex;
+            justify-content: center;
+        }
+        &__desc{
+        }
         &-cards{
         }
     }
@@ -163,8 +171,13 @@ li{
             padding: 49px 9px 29px 18px;
             border-radius: 15px;
             &:nth-child(1){
+            }
+            &:nth-child(2){
 
+            }
+            &:nth-child(3){
             }
         }
     }
 }
+
