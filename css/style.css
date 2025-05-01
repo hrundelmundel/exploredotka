@@ -226,10 +226,10 @@
   font-size: 30px;
   cursor: pointer;
 }
-.explore-numbers {
+.explore-number {
   color: #333;
 }
-.explore-numbers-start {
+.explore-number-start {
   display: flex;
   flex-direction: column;
   row-gap: 20px;
@@ -237,13 +237,20 @@
   margin-bottom: 30px;
   align-items: center;
 }
-.explore-numbers__desc {
+.explore-number__desc {
   width: 400px;
   color: #666;
 }
 .score-number-cards {
   display: flex;
   justify-content: space-between;
+}
+.score-number-cards-item {
+  width: 20%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
 .reviews {
@@ -283,4 +290,25 @@
 .reviews-cards-item-avatar {
   height: 20px;
   width: 20px;
+}
+
+.footer {
+  padding: 40px 200px;
+  background: black;
+  color: white;
+}
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-top-right {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.footer-top-right-question {
+  font-size: 20px;
+}
+.footer-bottom-left-question {
+  font-size: 20px;
 }
