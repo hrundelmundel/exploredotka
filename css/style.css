@@ -1,39 +1,42 @@
-li {
-  list-style: none;
-}
-
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
 }
 
 .header {
-  background: url(/img/diego-gutierrez-NRn5rrBnH8w-unsplash\ 1.png) no-repeat center/cover;
+  background: url(/img/дотка.jpg) no-repeat center/cover;
+  min-height: 100vh;
+  position: relative;
+  color: #f5f5f5;
+  font-family: "Montserrat", sans-serif;
 }
 .header-nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 30px 60px;
 }
-.header-nav-left {
+.header-left {
   display: flex;
   align-items: center;
-  -moz-column-gap: 62px;
-       column-gap: 62px;
+  gap: 60px;
 }
-.header-nav-list {
+.header-list {
   display: flex;
-  -moz-column-gap: 62px;
-       column-gap: 62px;
+  gap: 50px;
 }
-.header-nav-list__item {
-  color: white;
-  cursor: pointer;
-  text-transform: uppercase;
+.header-list__item {
   font-size: 14px;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #eeeeee;
+  transition: color 0.3s;
 }
-.header-nav__search {
-  margin-right: 62px;
-  cursor: wait;
+.header-list__search {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
 }
 .header-prikol {
   display: flex;
@@ -43,16 +46,22 @@ li {
   margin-top: 195px;
 }
 .header-prikol__title {
-  color: white;
-  font-size: 120px;
+  font-size: 90px;
+  line-height: 1;
+  font-weight: 700;
+  color: #ffffff;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
 }
 .header-prikol__button {
-  padding: 26px 64px;
-  color: white;
-  background: #DD2242;
+  padding: 20px 50px;
+  font-size: 18px;
   border-radius: 35px;
   border: none;
-  font-size: 20px;
+  background-color: #DD2242;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
 }
 .header-reklama {
   background: rgba(0, 0, 0, 0.475);
@@ -74,73 +83,151 @@ li {
 }
 
 .main {
-  background: rgb(3, 3, 43);
+  background: #f5f5f5;
+  font-family: "Poppins", sans-serif;
 }
 .main-top {
   display: flex;
   align-items: center;
+  justify-content: center;
+  gap: 100px;
+  flex-wrap: wrap;
+  max-width: 1400px;
+  padding-top: 20px;
 }
 .main-top__photo {
   width: 460px;
   height: 300px;
-  padding-left: 340px;
-  padding-right: 130px;
-  margin-top: 207px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 12px;
 }
 .main-top-block__title {
-  color: white;
   font-size: 38px;
+  color: #333;
+  margin-bottom: 20px;
 }
 .main-top-block__text {
-  color: white;
+  font-size: 16px;
+  color: #666;
+  line-height: 1.5;
 }
 .main-top-block__button {
-  background: #DD2242;
+  background-color: #DD2242;
+  color: white;
+  padding: 16px 41px;
   border: none;
   border-radius: 20px;
   margin-top: 32px;
-  padding: 16px 41px;
-  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 .main-bot {
+  padding-bottom: 30px;
   display: flex;
+  align-items: center;
   justify-content: center;
+  gap: 100px;
+  flex-wrap: wrap;
+  max-width: 1400px;
+  padding-bottom: 30px;
 }
 .main-bot__photo {
-  padding-left: 124px;
-  padding-right: 130px;
-  margin-top: 207px;
   width: 460px;
   height: 300px;
-  margin-bottom: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 12px;
 }
 .main-bot-block {
   margin-top: 260px;
   margin-left: 383px;
 }
 .main-bot-block__title {
-  color: white;
   font-size: 38px;
+  color: #333;
+  margin-bottom: 20px;
 }
 .main-bot-block__text {
-  color: white;
+  font-size: 16px;
+  color: #666;
+  line-height: 1.5;
 }
 .main-bot-block__button {
-  background: #DD2242;
+  background-color: #DD2242;
+  color: white;
+  padding: 16px 41px;
   border: none;
   border-radius: 20px;
   margin-top: 32px;
-  padding: 16px 41px;
-  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .explore {
-  background: url(/img/abstract-geometric-line-background_889452-56807.avif) no-repeat center/cover;
-  padding: 64px 32px;
+  background: #f5f5f5;
   text-align: center;
 }
+.explore-title {
+  color: #333;
+}
+.explore-slider {
+  width: 810px;
+  height: 540px;
+  overflow: hidden;
+  border: 3px solid #333;
+  border-radius: 10px;
+  margin: 0 auto 20px auto;
+  position: relative;
+}
+.explore-slider-wrapper {
+  display: flex;
+  height: 600px;
+  transition: transform 0.3s ease;
+}
+.explore-slider-wrapper-part {
+  min-width: 810px;
+  height: 540px;
+  background: #eee;
+  border-right: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+.explore-slider-wrapper-part__img {
+  height: 100%;
+  width: 100%;
+}
+.explore-slider-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  align-items: center;
+  justify-content: center;
+}
+.explore-slider-modal-content {
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  min-width: 300px;
+}
+.explore-slider-modal-content-close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 30px;
+  cursor: pointer;
+}
 .explore-numbers {
-  color: white;
+  color: #333;
 }
 .explore-numbers-start {
   display: flex;
@@ -152,6 +239,7 @@ li {
 }
 .explore-numbers__desc {
   width: 400px;
+  color: #666;
 }
 .score-number-cards {
   display: flex;
@@ -159,12 +247,13 @@ li {
 }
 
 .reviews {
-  background: url(/img/a06dd93a7b.webp) no-repeat center/cover;
+  background: #f5f5f5;
   padding-top: 30px;
+  padding-bottom: 100px;
 }
 .reviews__title {
   text-align: center;
-  color: white;
+  color: #333;
   font-size: 30px;
 }
 .reviews-cards {
@@ -174,8 +263,8 @@ li {
 }
 .reviews-cards-item {
   width: 255px;
-  background: rgba(0, 0, 0, 0.345);
-  color: white;
+  background: #eee;
+  color: #666;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -190,4 +279,8 @@ li {
 }
 .reviews-cards-item:nth-child(3) {
   box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+}
+.reviews-cards-item-avatar {
+  height: 20px;
+  width: 20px;
 }

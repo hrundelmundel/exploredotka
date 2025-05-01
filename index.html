@@ -24,7 +24,7 @@
             <img src="/img/Vector.svg" alt="" class="header-nav__search">
         </nav>
         <div class="header-prikol">
-            <h2 class="header-prikol__title">Explore <br> dotochka</h2>
+            <h2 class="header-prikol__title">Explore<br><span>dotochka</span></h2>
             <button class="header-prikol__button">Start trawelling</button>
         </div>
         <div class="header-reklama">
@@ -69,33 +69,39 @@
     </main>
     <section class="explore">
         <h2 class="explore-title">Explore Our Secrets</h2>
-        <div class="swiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="/img/Slider-photo" alt="" class="slider-photo"></div>
-                <div class="swiper-slide"><img src="/img/Slider-photo" alt="" class="slider-photo"></div>
-                <div class="swiper-slide"><img src="/img/Slider-photo" alt="" class="slider-photo"></div>
-                <div class="swiper-slide"><img src="/img/Slider-photo" alt="" class="slider-photo"></div>
-                <div class="swiper-slide"><img src="/img/Slider-photo" alt="" class="slider-photo"></div>
-                <div class="swiper-slide"><img src="/img/Slider-photo" alt="" class="slider-photo"></div>
-                <div class="swiper-slide"><img src="/img/Slider-photo" alt="" class="slider-photo"></div>
-                <div class="swiper-slide"><img src="/img/Slider-photo" alt="" class="slider-photo"></div>
-                <div class="swiper-slide"><img src="/img/Slider-photo" alt="" class="slider-photo"></div>
-                <div class="swiper-slide"><img src="/img/Slider-photo" alt="" class="slider-photo"></div>
-
+  <div class="explore-slider">
+            <div class="explore-slider-wrapper" id="slider">
+              <div class="explore-slider-wrapper-part">
+                   <img src="/img/мипо.webp" alt="" class="explore-slider-wrapper-part__img">
+              </div>
+              <div class="explore-slider-wrapper-part">
+                   <img src="/img/пудж.webp" alt="" class="explore-slider-wrapper-part__img">
+              </div>
+              <div class="explore-slider-wrapper-part">
+                   <img src="/img/wisp.webp" alt="" class="explore-slider-wrapper-part__img">
+              </div>
+              <div class="explore-slider-wrapper-part">
+                   <img src="/img/Distractor.webp" alt="" class="explore-slider-wrapper-part__img">
+              </div>
+              <div class="explore-slider-wrapper-part">
+                   <img src="/img/GopoTide.webp" alt="" class="explore-slider-wrapper-part__img">
+              </div>
             </div>
+          </div>
+          
+          <button class="explore-slider__button">открить кейс</button>
+          
+          <div id="modal" class="explore-slider-modal">
+            <div class="explore-slider-modal-content">
+              <span class="explore-slider-modal-close">&times;</span>
+              <p id="explore-slider-modal-case-info">Інформація про кейс</p>
+            </div>
+   </div>
 
-
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-
-
-
-        </div>
         <div class="explore-numbers">
             <div class="explore-numbers-start">
                 <h2 class="explore-numbers__title">By The Numbers</h2>
-            <p class="explore-numbers__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce commodo magna
-                et libero.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p class="explore-numbers__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, culpa. Architecto consequuntur consectetur exercitationem minima mollitia nostrum error neque! Molestias possimus temporibus est tempora repellendus sapiente ratione ea a. Dolore.</p>
             </div>
             <div class="score-numbers-cards">
                 <div class="score-numbers-cards-item">
@@ -121,38 +127,34 @@
         <h3 class="reviews__title">Відгуки</h3>
         <div class="reviews-cards">
             <div class="reviews-cards-item">
-                <img class="reviews-card-item-avatar" src="/img/Avatar1.png" alt="avatar">
-                <p class="reviews-card-item-desc">Sneakers are very
-                    comfortable and well
-                    painted, nothing has
-                    worn off in a year.</p>
+                <img class="reviews-card-item-avatar" src="/img/сларк.webp" alt="avatar">
+                <p class="reviews-card-item-desc">Я лудоман со стажем. Я слил тищу, мать наругала, заставила мыть посуду, не советую, КААЛ. Зато вывел юсп за двадцатку</p>
                 <span class="reviews-card-item-date">25.11</span>
                 <div class="reviews-card-item-container">
-                    <p class="reviews-card-item-name">John Teylor <br><span class="item-name-year">With us from
-                            2018</span>
+                    <p class="reviews-card-item-name">Даня ДЫРЯВЫЙ<br><span class="item-name-year"></span>
                     </p>
                 </div>
 
 
             </div>
             <div class="reviews-cards-item">
+                <img class="reviews-card-item-avatar" src="/img/luna.webp" alt="avatar">
                 <p class="reviews-card-item-desc">I'm very happy with this color scheme.
                     They match all my clothes.</p>
                     <span class="reviews-card-item-date">05.01</span>
                     <div class="reviews-card-item-container">
-                        <img class="reviews-card-item-avatar" src="/img/Avatar1.png" alt="avatar">
-                        <p class="reviews-card-item-name">Elizabeth Garsia <br><span class="item-name-year">With us from 2020</span>
+                     <p class="reviews-card-item-name">Elizabeth Garsia <br><span class="item-name-year">With us from 2020</span>
                     </p>
                     </div>
                 
             </div>
             <div class="reviews-cards-item">
+                <img class="reviews-card-item-avatar" src="/img/Emoticon_cocky_ti6_charm.webp" alt="avatar">
                 <p class="reviews-card-item-desc">I'm very happy with this color scheme.
                     They match all my clothes.</p>
                     <span class="reviews-card-item-date">05.01</span>
                     <div class="reviews-card-item-container">
-                        <img class="reviews-card-item-avatar" src="/img/Avatar1.png" alt="avatar">
-                        <p class="reviews-card-item-name">Elizabeth Garsia <br><span class="item-name-year">With us from 2020</span>
+                     <p class="reviews-card-item-name">Elizabeth Garsia <br><span class="item-name-year">With us from 2020</span>
                     </p>
                     </div>
                 
