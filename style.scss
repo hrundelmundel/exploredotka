@@ -1,29 +1,28 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
 
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
     background: #f5f5f5;
-    
-  }
-  
-  * {
+
+}
+
+* {
     margin: 0;
     padding: 0;
-  }
-  
-  a {
+}
+
+a {
     text-decoration: none;
-  }
-  
-  html {
+}
+
+html {
     scroll-behavior: smooth;
-  }
-  
-  .header {
-    background-image: linear-gradient(to bottom, rgba(15, 15, 15, 0), rgba(30, 30, 30, 0.85)), 
-    url('/img/дотка.jpg');
+}
+
+.header {
+    background-image: linear-gradient(to bottom, rgba(15, 15, 15, 0.282), rgba(30, 30, 30, 0.838)),
+        url('/img/дотка.jpg');
     background-size: cover;
     background-position: center;
     min-height: 100vh;
@@ -31,119 +30,143 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-  
+
     &-nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
-  
+
     &-left {
-      display: flex;
-      align-items: center;
+        display: flex;
+        align-items: center;
     }
-  
+
     &-list {
-      list-style: none;
-      display: flex;
-      gap: 20px;
-  
-      &__item {
-        color: white;
-        font-weight: 500;
-        cursor: pointer;
-        transition: color 0.3s ease;
-  
-        &:hover {
-          color: #aa2c39;
+        list-style: none;
+        display: flex;
+        gap: 20px;
+
+        &__item {
+            color: white;
+            font-weight: 500;
+            cursor: pointer;
+            transition: color 0.3s ease;
+
+            &:hover {
+                color: #aa2c39;
+            }
         }
-      }
     }
-  
+
     &-prikol {
-      position: absolute;
-      top: 28%;
-      left: 8%;
-      text-align: left;
-      max-width: 400px;
-  
-      &__title {
-        font-size: 56px;
-        font-weight: 700;
-        color: white;
-        line-height: 1.1;
-        margin-left: 30px;
-  
-        span {
-          color: #aa2c39;
-        }
-      }
-  
-      &__button {
-        margin-left: 30px;
-        margin-top: 28px;
-        padding: 14px 40px;
-        background-color: rgba(170, 44, 57, 0.85);
-        color: white;
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        border-radius: 28px;
-        font-size: 17px;
-        font-weight: 500;
-        cursor: pointer;
-        transition: all 0.3s ease;
-        box-shadow: 0 6px 14px rgba(0, 0, 0, 0.4);
-        backdrop-filter: blur(3px);
-  
-        &:hover {
-          background-color: rgba(170, 44, 57, 1);
-          transform: translateY(-2px);
-          box-shadow: 0 8px 18px rgba(0, 0, 0, 0.5);
-        }
-      }
-    }
-  
-    &-reklama {
-      display: flex;
-      justify-content: center;
-      gap: 40px;
-      padding: 40px 20px;
-      background: rgba(255, 255, 255, 0);
-      margin-top: 60px;
-      
-  
-      &-fragment {
-        height: 100px;
-        width: 140px;
-        background: rgba(0, 0, 0, 0.7);
-        padding: 20px;
-        border-radius: 20px;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-        text-align: center;
-        flex: 0 0 200px;
-  
-        &__num {
-          font-size: 22px;
-          font-weight: bold;
-          color: #aa2c39;
-        }
-  
+        position: absolute;
+        top: 28%;
+        left: 8%;
+        text-align: left;
+        max-width: 400px;
+
         &__title {
-          font-size: 16px;
-          margin: 10px 0;
-          color: #fff;
+            font-size: 56px;
+            font-weight: 700;
+            color: white;
+            line-height: 1.1;
+            margin-left: 30px;
+
+            span {
+                color: #aa2c39;
+            }
         }
-  
-        &__text {
-          font-size: 14px;
-          color: #ccc;
+
+        &__button {
+            margin-left: 30px;
+            margin-top: 28px;
+            padding: 14px 40px;
+            background-color: rgba(170, 44, 57, 0.85);
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 28px;
+            font-size: 17px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 6px 14px rgba(0, 0, 0, 0.4);
+            backdrop-filter: blur(3px);
+
+            &:hover {
+                background-color: rgba(170, 44, 57, 1);
+                transform: translateY(-2px);
+                box-shadow: 0 8px 18px rgba(0, 0, 0, 0.5);
+            }
         }
-      }
     }
-  }
+
+    &-reklama {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        padding: 40px 20px;
+        background: rgba(255, 255, 255, 0);
+        margin-top: 60px;
+
+
+        &-fragment {
+            height: 100px;
+            width: 140px;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            flex: 0 0 200px;
+            transition: all .5s;
+            &:hover{
+                scale: 1.1;
+            }
+
+            &__num {
+                font-size: 22px;
+                font-weight: bold;
+                color: #aa2c39;
+            }
+
+            &__title {
+                position: relative;
+                z-index: 2;
+                font-size: 16px;
+                margin: 10px 0;
+                color: #fff;
+            }
+
+            &__text {
+                font-size: 14px;
+                color: #ccc;
+            }
+        }
+    }
+}
+
+.first {
+    position: relative;
+    background: url('/img/мипо.webp') no-repeat center center;
+    background-size: cover;
+    z-index: 0;
+}
+
+.first::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.526);
+    z-index: 1;
+    border-radius: 20px;
+}
 
 .main {
-    background: linear-gradient(to top, rgba(15, 15, 15, 0), rgba(30, 30, 30, 0.85)), 
-    url('/img/дотка2.jpg') center/cover no-repeat;
+    background: linear-gradient(to top, rgba(15, 15, 15, 0.305), rgba(30, 30, 30, 0.85)),
+        url('/img/дотка2.jpg') center/cover no-repeat;
     padding: 100px 20px;
     display: flex;
     flex-direction: column;
@@ -158,18 +181,19 @@ body {
 
         &__photo {
             max-width: 500px;
-    width: 100%;
-    border-radius: 16px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+            width: 100%;
+            border-radius: 16px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
         }
 
         &-block {
             max-width: 500px;
             color: white;
+
             &__title {
                 font-size: 28px;
-    font-weight: 600;
-    margin-bottom: 16px;
+                font-weight: 600;
+                margin-bottom: 16px;
             }
 
             &__text {
@@ -190,7 +214,8 @@ body {
                 cursor: pointer;
                 transition: all 0.3s ease;
                 box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-                &:hover{
+
+                &:hover {
                     background-color: rgba(170, 44, 57, 1);
                     transform: translateY(-2px);
                 }
@@ -241,7 +266,8 @@ body {
                 cursor: pointer;
                 transition: all 0.3s ease;
                 box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-                &:hover{
+
+                &:hover {
                     background-color: rgba(170, 44, 57, 1);
                     transform: translateY(-2px);
                 }
@@ -253,8 +279,8 @@ body {
 }
 
 .hero {
-    background: linear-gradient(to bottom, rgba(15, 15, 15, 0), rgba(30, 30, 30, 0.85)), 
-    url('/img/дотка3.jpg') center/cover no-repeat;
+    background: linear-gradient(to bottom, rgba(15, 15, 15, 0.23), rgba(30, 30, 30, 0.85)),
+        url('/img/дотка3.jpg') center/cover no-repeat;
     padding: 100px 20px;
     display: flex;
     flex-direction: column;
@@ -267,22 +293,27 @@ body {
         justify-content: space-between;
         flex-wrap: wrap;
         gap: 40px;
-        
+
 
         &__photo {
             max-width: 500px;
-    width: 100%;
-    border-radius: 16px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+            width: 100%;
+            border-radius: 16px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+        }
+        &-menu{
+            position: absolute;
+            bottom: 120px;
         }
 
         &-block {
             max-width: 500px;
             color: white;
+
             &__title {
                 font-size: 28px;
-    font-weight: 600;
-    margin-bottom: 16px;
+                font-weight: 600;
+                margin-bottom: 16px;
             }
 
             &__text {
@@ -303,7 +334,8 @@ body {
                 cursor: pointer;
                 transition: all 0.3s ease;
                 box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-                &:hover{
+
+                &:hover {
                     background-color: rgba(170, 44, 57, 1);
                     transform: translateY(-2px);
                 }
@@ -354,7 +386,8 @@ body {
                 cursor: pointer;
                 transition: all 0.3s ease;
                 box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-                &:hover{
+
+                &:hover {
                     background-color: rgba(170, 44, 57, 1);
                     transform: translateY(-2px);
                 }
@@ -369,7 +402,7 @@ body {
     background: #f5f5f5;
     text-align: center;
 
-    &-title{
+    &-title {
         color: #333;
     }
 
@@ -401,7 +434,8 @@ body {
             justify-content: space-between;
             padding-left: 120px;
             padding-right: 120px;
-            &-item{
+
+            &-item {
                 width: 20%;
                 box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
                 padding: 10px;
@@ -438,18 +472,21 @@ body {
             justify-content: space-between;
             padding: 49px 9px 29px 18px;
             border-radius: 15px;
-            &-avatar{
+
+            &-avatar {
                 height: 20px;
                 width: 20px;
             }
-            &-desc{
-                &-dop{
+
+            &-desc {
+                &-dop {
                     color: #DD2242;
                     font-weight: 900;
                     font-family: "Bangers", system-ui;
 
                 }
             }
+
             &:nth-child(1) {
                 box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
             }
@@ -471,26 +508,30 @@ body {
     }
 }
 
-.footer{
+.footer {
     padding: 40px 200px;
     background: black;
     color: white;
-    &-top{
+
+    &-top {
         display: flex;
         justify-content: space-between;
-        &-right{
+
+        &-right {
             display: flex;
             flex-direction: column;
             row-gap: 20px;
-            &-question{
+
+            &-question {
                 font-size: 20px;
 
             }
         }
     }
-    &-bottom{
-        &-left{
-            &-question{
+
+    &-bottom {
+        &-left {
+            &-question {
                 font-size: 20px;
 
             }
